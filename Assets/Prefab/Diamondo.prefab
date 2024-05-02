@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 6977253388252319994}
   - component: {fileID: 4226484256245333983}
   - component: {fileID: 552467405143064162}
+  - component: {fileID: 6142110751303261535}
   m_Layer: 0
   m_Name: Diamondo
   m_TagString: Untagged
@@ -97,16 +98,30 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isAnimated: 1
+  screenText: {fileID: 0}
   isRotating: 1
   isFloating: 1
   isScaling: 1
   rotationAngle: {x: 0, y: 0, z: 10}
   rotationSpeed: 10
-  floatSpeed: 0.04
-  goingUp: 1
-  floatRate: 0.5
-  floatTimer: 0
-  startScale: {x: 1, y: 1, z: 1}
-  endScale: {x: 1.5, y: 1.5, z: 1.5}
-  scaleSpeed: 1
-  scaleRate: 0.5
+--- !u!65 &6142110751303261535
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1729923736409669490}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 2.1386092, y: 2.1671238, z: 3.2000003}
+  m_Center: {x: 0, y: -0.00000005960466, z: 0}

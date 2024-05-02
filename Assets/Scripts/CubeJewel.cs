@@ -1,9 +1,15 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class CubeJewel : Gem
 {
+    public TextMeshProUGUI screenText3;
+    public float floatSpeed;
+    public bool goingUp = true; //protection
+    public float floatRate;
+    public float floatTimer; //protection
     // Start is called before the first frame update
     void Start()
     {
@@ -36,4 +42,9 @@ public class CubeJewel : Gem
             floatSpeed = +floatSpeed;
         }
     }
+    public override void DisplayText()
+    {
+        screenText3.SetText("POLYMORPHISM");
+    }
 }
+
